@@ -1,7 +1,7 @@
-word=input("enter a word:")
-vowels=["A","E","I","O","U"]
+word=input("enter a word")
+vowels=["a","e","i","o","u"]
 count=0
-for i in vowels:
-    if i in word.upper():
-        count+=1
+for char in word.lower():
+    if char in vowels:
+        count=count+1
 print(count)
